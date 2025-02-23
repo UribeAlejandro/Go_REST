@@ -4,15 +4,15 @@ import (
 	"context"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
-	"go_rest.com/rest-ws/handlers"
-	"go_rest.com/rest-ws/server"
+	"go_rest.com/rest-ws/api/handlers"
+	"go_rest.com/rest-ws/api/server"
 	"log"
 	"net/http"
 	"os"
 )
 
 func main() {
-	err := godotenv.Load("../.env")
+	err := godotenv.Load("../../.env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
